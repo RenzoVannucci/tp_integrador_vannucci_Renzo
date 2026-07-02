@@ -1,0 +1,336 @@
+
+body {
+    font-family: "Press Start 2P", cursive;
+    background: linear-gradient(
+        to bottom,
+        #5c94fc 0%,
+        #5c94fc 75%,
+        #4caf50 75%,
+        #4caf50 100%
+    );
+    margin: 0;
+    color: #222;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* ---------- CONTENEDOR ---------- */
+
+.container {
+    width: 95%;
+    margin: 20px auto;
+    background: #fff8dc;
+    padding: 20px;
+    border: 4px solid #000;
+    border-radius: 0;
+    box-shadow: 8px 8px 0 #000;
+    position: relative;
+}
+
+/* Bloque de pregunta estilo Mario */
+
+.container::before {
+    content: "?";
+    position: absolute;
+    top: -20px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fbd000;
+    color: #000;
+
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0 #000;
+}
+
+/* ---------- TITULOS ---------- */
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+
+    color: #e52521;
+
+    text-shadow:
+        3px 3px 0 #000,
+        5px 5px 0 #fbd000;
+}
+
+.subtitle {
+    text-align: center;
+    color: #444;
+    margin-top: 0;
+}
+
+/* ---------- ACCIONES ---------- */
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+/* ---------- BOTONES ---------- */
+
+.btn,
+button {
+    display: inline-block;
+    width: 90%;
+    margin: 15px auto;
+
+    box-sizing: border-box;
+
+    background: #fbd000;
+    color: #000;
+
+    padding: 12px;
+
+    border: 4px solid #000;
+    border-radius: 0;
+
+    text-decoration: none;
+    text-align: center;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 0.75rem;
+
+    box-shadow: 4px 4px 0 #000;
+
+    transition: none;
+}
+
+.btn:hover,
+button:hover {
+    background: #ffd93d;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000;
+}
+
+.secondary {
+    background: #e52521;
+    color: white;
+}
+
+.secondary:hover {
+    background: #c91d1d;
+}
+
+/* ---------- BUSCADOR ---------- */
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.search input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    background: white;
+    color: black;
+
+    border: 3px solid #000;
+    border-radius: 0;
+
+    font-family: inherit;
+}
+
+/* ---------- TABLA ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 3px solid #000;
+    text-align: left;
+}
+
+th {
+    background: #e52521;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #ffe082;
+}
+
+tbody tr:nth-child(odd) {
+    background: #fff8dc;
+}
+
+tr:hover {
+    background: #ffd54f;
+}
+
+/* ---------- LINKS ---------- */
+
+.link {
+    margin-right: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit {
+    color: #0066ff;
+}
+
+.delete {
+    color: #e52521;
+}
+
+/* ---------- FORMULARIOS ---------- */
+
+.form-card {
+    max-width: 100%;
+}
+
+.form-card label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+    color: #000;
+}
+
+.form-card input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    background: white;
+    color: black;
+
+    border: 3px solid #000;
+    border-radius: 0;
+
+    font-family: inherit;
+}
+
+.search input::placeholder,
+.form-card input::placeholder {
+    color: #777;
+}
+
+.form-card input:focus,
+.search input:focus {
+    outline: none;
+    border-color: #e52521;
+}
+
+.form-card button {
+    margin-top: 18px;
+}
+
+/* ---------- ALERTAS ---------- */
+
+.alert {
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 3px solid #000;
+    border-radius: 0;
+}
+
+.success {
+    background: #7ed957;
+    color: #000;
+}
+
+.error {
+    background: #ff6b6b;
+    color: #000;
+}
+
+.empty {
+    text-align: center;
+    color: #555;
+}
+
+/* ---------- ABOUT ---------- */
+
+.titulo_about {
+    color: #e52521;
+}
+
+/* ==========================
+   DESKTOP / TABLET
+   ========================== */
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 92%;
+        max-width: 1100px;
+        margin: 35px auto;
+        padding: 30px;
+    }
+
+    .actions {
+        display: unset;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+
+    .search {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+
+    .search input {
+        width: 320px;
+    }
+
+    .btn,
+    button {
+        width: auto;
+    }
+
+    .form-card {
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* ==========================
+   PANTALLAS GRANDES
+   ========================== */
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+

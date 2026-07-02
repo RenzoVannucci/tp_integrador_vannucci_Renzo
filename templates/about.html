@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Acerca del sistema{% endblock %}
+
+{% block content %}
+<h1>Acerca del Sistema</h1>
+<h2 class="titulo_about">Estudiante: Vannucci Renzo</h2>
+
+<p>
+    Este sistema permite administrar estudiantes mediante operaciones CRUD
+    (Crear, Leer, Actualizar y Eliminar) utilizando una base de datos PostgreSQL.
+</p>
+
+<h2 class="titulo_about">Información del sistema</h2>
+
+<ul>
+    <li>Nombre: Sistema de Gestión de Estudiantes</li>
+    <li>Versión: 1.0</li>
+    <li>Tipo: Aplicación web CRUD</li>
+    <li>Base de datos: PostgreSQL</li>
+</ul>
+
+<h2 class="titulo_about">Funcionalidades implementadas</h2>
+
+<ul>
+    <li>Alta de estudiantes</li>
+    <li>Modificación de estudiantes</li>
+    <li>Eliminación de estudiantes</li>
+    <li>Búsqueda por DNI, apellido, nombre y carrera</li>
+    <li>Validación de datos ingresados</li>
+    <li>Mensajes de éxito y error mediante Flash</li>
+    <li>Gestión de teléfono y edad de estudiantes</li>
+</ul>
+
+<h2 class="titulo_about">Tecnologías utilizadas</h2>
+
+<ul>
+    <li>Python 3</li>
+    <li>Flask</li>
+    <li>PostgreSQL</li>
+    <li>psycopg2</li>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Jinja2</li>
+</ul>
+
+<p>
+    Proyecto desarrollado con fines educativos para practicar desarrollo backend,
+    manejo de bases de datos relacionales y aplicaciones web con Flask.
+</p>
+
+<h2 class="titulo_about">Arquitectura</h2>
+
+<ul>
+    <li>Frontend: HTML + CSS</li>
+    <li>Backend: Flask</li>
+    <li>Persistencia: PostgreSQL</li>
+    <li>Acceso a datos: psycopg2</li>
+</ul>
+
+<a class="btn secondary" href="{{ url_for('index') }}">
+    Volver al inicio
+</a>
+{% endblock %}
