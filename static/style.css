@@ -63,9 +63,12 @@ h1 {
 }
 
 .subtitle {
+   .subtitle {
     text-align: center;
-    color: #444;
+    color: #1e3a8a;
     margin-top: 0;
+    font-size: 0.9rem;
+}
 }
 
 /* ---------- ACCIONES ---------- */
