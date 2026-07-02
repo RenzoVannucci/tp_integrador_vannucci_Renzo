@@ -113,9 +113,10 @@ button {
 
 .btn:hover,
 button:hover {
-    background: #ffd93d;
-    transform: translate(2px, 2px);
-    box-shadow: 2px 2px 0 #000;
+    background: #ffeb3b;
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 #000;
+
 }
 
 .secondary {
